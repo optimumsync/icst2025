@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .registration-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .category-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .category-card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+  }
+  
+  .category-card h2 {
+    color: #333;
+  }
+  
+  .category-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  
+  .info-card h1 {
+    color: #2e7d32;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .info-card ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .timeline {
+    padding-left: 20px;
+    border-left: 3px solid #2e7d32;
+  }
+  
+  .timeline-item {
+    margin-bottom: 15px;
+  }
+  
+  .timeline-item p {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .timeline-item span {
+    display: block;
+    color: #666;
+  }
+  .dotted-line {
+    border-top: 2px dotted #bbb;
+    margin: 20px 0;
+  }
+  
