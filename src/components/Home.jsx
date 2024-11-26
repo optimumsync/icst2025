@@ -1,8 +1,14 @@
 import React from 'react'
-
+import Navbar from './Navbar'
+import Footer from './Footer'
+import Homecontent from './hero/Homecontent'
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Navbar/>
+      <Homecontent/>
+      <Footer/>
+    </div>
   )
 }
 

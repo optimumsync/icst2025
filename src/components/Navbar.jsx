@@ -1,11 +1,44 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from '../assets/logo.png';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [menu, setMenu] = useState(0);
+  useEffect(()=>{
+    const mdata = window.location.pathname;
+    // console.log(mdata)
+    if(mdata === '/'){
+      setMenu(1);
+    }
+    else if(mdata === '/about'){
+      setMenu(2);
+    }
+    else if(mdata === '/committee'){
+      setMenu(3);
+    }
+    else if(mdata === '/call-for-papers'){
+      setMenu(4);
+    }
+    else if(mdata === '/track'){
+      setMenu(5);
+    }
+    else if(mdata === '/registration'){
+      setMenu(6);
+    }
+    else if(mdata === '/conclave'){
+      setMenu(7);
+    }
+    else if(mdata === '/contact-us'){
+      setMenu(8);
+    }
+    else{
+      setMenu(0);
+    }
+  },[])
 
   return (
-    <nav className="bg-gogreen text-white shadow">
+    <nav className="text-white bg-gogreen">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-16">
 
@@ -16,15 +49,15 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="hidden md:flex w-full justify-between mx-40 flex-wrap font-semibold space-x-4">
-            <a>Home</a>
-            <a>About</a>
-            <a>Committee</a>
-            <a>Call For Papers</a>
-            <a>Track</a>
-            <a>Registration</a>
-            <a>Conclave</a>
-            <a>Contact Us</a>
+          <div className="hidden md:flex w-full justify-between mx-40 flex-wrap font-semibold space-x-4 ">
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/" className={`${menu == 1 && 'underline decoration-4 decoration-logo3'}`}>Home</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/about" className={`${menu == 2 && 'underline decoration-4 decoration-logo3'}`}>About</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/committee" className={`${menu == 3 && 'underline decoration-4 decoration-logo3'}`}>Committee</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/call-for-papers" className={`${menu == 4 && 'underline decoration-4 decoration-logo3'}`}>Call For Papers</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/track" className={`${menu == 5 && 'underline decoration-4 decoration-logo3'}`}>Track</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/registration" className={`${menu == 6 && 'underline decoration-4 decoration-logo3'}`}>Registration</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/conclave" className={`${menu == 7 && 'underline decoration-4 decoration-logo3'}`}>Conclave</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/contact-us" className={`${menu == 8 && 'underline decoration-4 decoration-logo3'}`}>Contact Us</Link></a>
           </div>
 
           <div className="md:hidden">
@@ -55,14 +88,14 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Home</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">About</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Committee</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Call For Papers</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Track</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Registration</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Conclave</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Contact Us</a>
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Home</a>
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">About</a>
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Committee</a>
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Call For Papers</a>
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Track</a>
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Registration</a>
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Conclave</a>
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Contact Us</a>
           </div>
         </div>
       )}
