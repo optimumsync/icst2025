@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
 import Notfound from "./components/Notfound";
+import ContactUs from './components/ContactUs';
+// import About from "./components/About";
+// import Contact from "./components/Contact";
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +19,7 @@ function App() {
          <Route path="/about" element={<Aboutus />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="*" element={<Notfound />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
