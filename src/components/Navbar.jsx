@@ -11,7 +11,7 @@ const Navbar = () => {
     if(mdata === '/'){
       setMenu(1);
     }
-    else if(mdata === '/about'){
+    else if(mdata === '/about-us'){
       setMenu(2);
     }
     else if(mdata === '/committee'){
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex w-full justify-between mx-40 flex-wrap font-semibold space-x-4 ">
             <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/" className={`${menu == 1 && 'underline decoration-4 decoration-logo3'}`}>Home</Link></a>
-            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/about" className={`${menu == 2 && 'underline decoration-4 decoration-logo3'}`}>About</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/about-us" className={`${menu == 2 && 'underline decoration-4 decoration-logo3'}`}>About</Link></a>
             <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/committee" className={`${menu == 3 && 'underline decoration-4 decoration-logo3'}`}>Committee</Link></a>
             <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/call-for-papers" className={`${menu == 4 && 'underline decoration-4 decoration-logo3'}`}>Call For Papers</Link></a>
             <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/track" className={`${menu == 5 && 'underline decoration-4 decoration-logo3'}`}>Track</Link></a>
