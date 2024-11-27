@@ -1,13 +1,13 @@
 import React from 'react';
 // import './Aboutus.css';
-import img1 from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/Untitled1.jpeg'; 
-import img2 from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/Untitled2.jpeg'; 
-import img3 from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/Untitled3.jpeg'; 
-import img4 from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/Untitled4.jpeg'; 
-import img5 from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/Untitled5.jpeg'; 
-import img6 from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/Untitled6.jpeg'; 
-import nieImg from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/NIE.jpeg'; 
-import dortmundImg from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/FHDortmund.jpeg';
+import img1 from './images/Untitled1.jpeg'; 
+import img2 from './images/Untitled2.jpeg'; 
+import img3 from './images/Untitled3.jpeg'; 
+import img4 from './images/Untitled4.jpeg'; 
+import img5 from './images/Untitled5.jpeg'; 
+import img6 from './images/Untitled6.jpeg'; 
+// import nieImg from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/NIE.jpeg'; 
+// import dortmundImg from '/home/olen-pinto/projects/icst2025/icst2025/src/components/images/FHDortmund.jpeg';
 import Navbar from './Navbar';
 
 const Aboutus = () => {
