@@ -111,7 +111,7 @@ const ContactUs = () => {
       <Navbar />
       <main className="flex-grow py-8 px-4 lg:py-12 lg:px-6">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl lg:text-6xl font-semibold text-center mb-6 lg:mb-8 bg-gradient-to-r from-[#ffffff] via-[#36604b] to-[#024d25] bg-clip-text text-transparent">
+          <h1 className="text-4xl lg:text-6xl font-semibold text-center mb-6 lg:mb-8 bg-gradient-to-r from-[#ffffff] via-[#28543e] to-[#00381a] bg-clip-text text-transparent">
             Contact Us
           </h1>
 
@@ -127,7 +127,7 @@ const ContactUs = () => {
             <ContactSection key={index} {...detail} />
           ))}
 
-          <p className="mt-4 lg:mt-6 text-center font-medium lg:font-semibold text-base lg:text-lg text-[#145430] border-t-2 border-[#145430] pt-4">
+          <p className="mt-2 lg:mt-2 text-center font-medium lg:font-semibold text-base lg:text-lg text-[#145430] border-t-2 border-[#145430] pt-4">
             We look forward to your participation in the International Conference on Sustainable
             Technology and Conclave. If you have any other questions or need further assistance,
             please do not hesitate to contact us.
