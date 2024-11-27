@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 // import About from "./components/About";
-// import Contact from "./components/Contact";
+import Contactus from "./components/Contactus";
+import RegistrationPage from "./components/Registration";
+
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/navbar" element={<Navbar />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/contact" element={<Contactus />} />
+        <Route path="/Registration" element={<RegistrationPage />} />
       </Routes>
     </BrowserRouter>
   );
