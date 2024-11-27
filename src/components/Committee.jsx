@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import ChiefPatron from "./components/Chiefpatron";
-import CommitteeMembers from "./components/Committeemembers";
+import ChiefPatron from "./Chiefpatron";
+import CommitteeMembers from "./Committeemembers";
 
 
 const Committee = () => {
