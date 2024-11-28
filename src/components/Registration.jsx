@@ -1,8 +1,9 @@
 import { Check } from 'lucide-react';
-import treeImage from '../assets/tree.jpg';
-import globalImage from '../assets/global2.svg';
-import leafImage from '../assets/leaf1.jpg';
+import treeImage from '../assets/imp dates.svg';
+import globalImage from '../assets/global2 (3).svg';
+import leafImage from '../assets/leaf.svg';
 import arrowImage from '../assets/arrow.png';
+import rightImage from '../assets/right filled circle.svg';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -53,7 +54,7 @@ const Registration = () => {
               className="bg-white border-2 border-[#2B5B3E] rounded-2xl p-8 hover:shadow-lg transition-shadow"
             >
               <div className="flex items-start gap-2 mb-6">
-                <div className="rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                <div className="rounded-full bg-white flex items-center justify-center flex-shrink-0">
                   <img src={leafImage} alt="Tree" className=" w-10 h-10 mx-auto" />
                 </div>
 
@@ -61,12 +62,17 @@ const Registration = () => {
                 <h3 className="text-xl font-bold">{card.title}</h3>
               </div>
               <div className="flex items-start gap-2 mb-8 text-gray-600">
-                <Check className="w-5 h-5 text-[#2B5B3E] flex-shrink-0" />
+              <div className="rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                  <img src={rightImage} alt="Tree" className=" w-6 h-6 mx-auto" />
+              </div>
+
                 <p>{card.description}</p>
               </div>
-              <div className="border-t border-dashed border-grey-800 my-4" />
+              
+              <div className="mt-6 border-2 border-dashed border-gray-400"></div>
               <br/>
               <br/>
+              
               <p className="text-2xl font-bold mb-6">{card.price}</p>
               
               <button className="w-full bg-green-800 text-white py-3 rounded-xl hover:bg-[#234832] transition-colors">
@@ -75,7 +81,7 @@ const Registration = () => {
             </div>
           ))}
         </div>
-        <div className="mt-5 border-2 border-dashed border-black"></div>
+        <div className="mt-5 border-2 border-dashed border-gray-400"></div>
         <br/>
 
         {/* Additional Information */}
@@ -122,7 +128,9 @@ const Registration = () => {
             </div>
           </div>
         </section>
-        <div className="mt-5 border-2 border-dashed border-black"></div>
+
+        {/* important dates */}
+        <div className="mt-5 border-2 border-dashed border-gray-400"></div>
         <br/>
         <h2 className="text-3xl font-bold text-center text-[#2B5B3E] mb-8">Important Dates</h2>
         <div className="flex justify-center items-center h-screen">
