@@ -25,17 +25,28 @@ const Committee = () => {
         // members: [{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }/* Add more members */],
         // links: ["Conference", "Technical", "Publication", "Arrangements", "Finance"]
         },
-        { title: "Conference Committee", 
-        members: [{ name: "Name", designation: "Designation" } /* Add more members */],
-        links: ["Track 1", "Track 2", "Track 3", "Track 4", "Track 5", "Track 6"]
+        { 
+            title: "Conference Committee",
+            "Track 1": [{ name: "Name1", designation: "Designation" }],
+            "Track 2": [{ name: "Name2", designation: "Designation" }],
+            "Track 3": [{ name: "Name3", designation: "Designation" }],
+            "Track 4": [{ name: "Name4", designation: "Designation" }],
+            "Track 5": [{ name: "Name5", designation: "Designation" }],
+            "Track 6": [{ name: "Name6", designation: "Designation" }],
         },
-        { title: "Organizing Committee", 
-        members: [{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" } /* Add more members */],
-        links: ["Organizing", "Advisory", "Sustainablity", "Media", "Sponsorship", "Transport"]
+        { 
+            title: "Organizing Committee",
+            "Organizing":[{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }],
+            "Advisory":[{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }],
+            "Sustainablity":[{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }],
+            "Media":[{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }],
+            "Sponsorship":[{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }],
+            "Transport":[{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }],
         },
-        { title: "Student Committee", 
-        members: [{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" } /* Add more members */],
-        links: ["Student Committee", "Faculty Co-Ordinator"]
+        { 
+            title: "Student Committee",
+            "Student Committee": [{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" },{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" },{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }],
+            "Faculty Co-Ordinator": [{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" },{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" },{ name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }, { name: "Name", designation: "Designation" }],
         },
         // Add other roles as necessary
     ];
