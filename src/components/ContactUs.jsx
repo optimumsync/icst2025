@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 const ContactSection = ({ title, content, email, phone, extraContent }) => (
-  <div className="flex flex-col lg:flex-row border-t-2 border-[#145430] p-6 last:border-b">
+  <div className="flex flex-col lg:flex-row border-t-2 border-[#145430] p-2 md:p-6 last:border-b">
     {/* Title section with increased width */}
     <div className="text-[#145430] font-semibold text-2xl lg:text-3xl uppercase text-center py-4 px-6 border-r-0 lg:border-r-2 border-[#145430] w-full lg:w-80 flex items-center justify-center mb-4 lg:mb-0">
       {title}
@@ -109,9 +109,9 @@ const ContactUs = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Navbar />
-      <main className="flex-grow py-8 px-4 lg:py-12 lg:px-6">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl lg:text-6xl font-semibold text-center mb-6 lg:mb-8 bg-gradient-to-r from-[#ffffff] via-[#28543e] to-[#00381a] bg-clip-text text-transparent">
+      <main className="flex-grow py-8 px-4 lg:py-12 lg:px-6 self-center">
+        <div className="max-w-7xl mx-auto md:mx-20">
+          <h1 className="text-3xl lg:text-3xl font-semibold text-center mb-6 lg:mb-8 bg-gradient-to-r from-[#ffffff] via-[#28543e] to-[#00381a] bg-clip-text text-transparent">
             Contact Us
           </h1>
 
