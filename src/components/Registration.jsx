@@ -32,7 +32,7 @@ function Registration() {
                 </div>
                 <div className='border border-gogreen md:w-3/12 rounded-lg p-3 flex flex-col justify-between'>
                     <span className='flex justify-center'><img src={leaf3} alt="" className='pe-2' style={{"width":"30px"}}/><h2 className='text-2xl font-bold'>Non-resident</h2></span>
-                    <span className='flex place-items-start m-3 overflow-auto'><img src={check} alt="" />Foreign Authors (UG/PG/PhD Scholar/Faculty/Industry)</span>
+                    <span className='flex place-items-start m-3 overflow-auto no-scrollbar'><img src={check} alt="" />Foreign Authors (UG/PG/PhD Scholar/Faculty/Industry)</span>
                     <div><hr className='border border-slate-600 border-dotted'/>
                     <span className='text-2xl font-bold flex justify-start m-3'>$ 200</span></div>
                 </div>
