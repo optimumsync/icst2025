@@ -12,6 +12,8 @@ module.exports = {
         logo3 : '#00a44e',
         gogreen2 : '#2A463C',
         gogreen3 : '#3B4E47',
+        gogreen4 : '#688D78',
+
       }
     },
   },
