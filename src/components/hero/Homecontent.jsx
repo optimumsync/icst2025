@@ -20,7 +20,7 @@ function Homecontent() {
               <Sponlogos/>
             </div>
           </div>
-          <div className="text-center text-4xl font-bold my-5">ICST - 2025</div>
+          <h1 className="text-center text-5xl font-bold my-5">ICST - 2025</h1>
           <div className="font-semibold my-5 flex justify-center w-full">
             <div className="md:w-7/12 text-center z-10">
               Join us for an inspiring event where industry leaders,

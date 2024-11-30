@@ -11,7 +11,7 @@ const Navbar = () => {
     if(mdata === '/'){
       setMenu(1);
     }
-    else if(mdata === '/about'){
+    else if(mdata === '/about-us'){
       setMenu(2);
     }
     else if(mdata === '/committee'){
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex w-full justify-between mx-40 flex-wrap font-semibold space-x-4 ">
             <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/" className={`${menu == 1 && 'underline decoration-4 decoration-logo3'}`}>Home</Link></a>
-            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/about" className={`${menu == 2 && 'underline decoration-4 decoration-logo3'}`}>About</Link></a>
+            <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/about-us" className={`${menu == 2 && 'underline decoration-4 decoration-logo3'}`}>About</Link></a>
             <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/committee" className={`${menu == 3 && 'underline decoration-4 decoration-logo3'}`}>Committee</Link></a>
             <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/call-for-papers" className={`${menu == 4 && 'underline decoration-4 decoration-logo3'}`}>Call For Papers</Link></a>
             <a className="hover:text-logo2 hover:cursor-pointer"><Link to="/track" className={`${menu == 5 && 'underline decoration-4 decoration-logo3'}`}>Track</Link></a>
@@ -87,15 +87,15 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Home</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">About</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Committee</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Call For Papers</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Track</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Registration</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Conclave</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3">Contact Us</a>
+          <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <Link to={"/"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 1 && 'underline decoration-4 decoration-logo3'}`} onClick={()=>{setIsOpen(!isOpen)}}>Home</Link>
+            <Link to={"/about-us"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 2 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>About</Link>
+            <Link to={"/comittee"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 3 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Committee</Link>
+            <Link to={"/call-for-papers"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 4 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Call For Papers</Link>
+            <Link to={"/track"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 5 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Track</Link>
+            <Link to={"/registration"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 6 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Registration</Link>
+            <Link to={"/conclave"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 7 && 'underline decoration-4 decoration-logo3'}`} onClick={()=>{setIsOpen(!isOpen)}}>Conclave</Link>
+            <Link to={"/contact-us"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 8 && 'underline decoration-4 decoration-logo3'}`} onClick={()=>{setIsOpen(!isOpen)}}>Contact Us</Link>
           </div>
         </div>
       )}
