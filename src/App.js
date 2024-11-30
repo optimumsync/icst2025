@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
 import Notfound from "./components/Notfound";
-import Committee from "./components/Committee";
+// import Committee from "./components/Committee";
 import Track from "./components/Track";
 import ContactUs from './components/ContactUs';
 import Callforpapers from "./components/Callforpapers";
@@ -19,7 +19,7 @@ function App() {
          <Route path="/call-for-papers" element={<Callforpapers />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="*" element={<Notfound />} />
-        <Route path="/committee" element={<Committee />} />
+        {/* <Route path="/committee" element={<Committee />} /> */}
         <Route path="/track" element={<Track />} />
       {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
