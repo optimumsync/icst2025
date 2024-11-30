@@ -15,7 +15,7 @@ function Registration() {
             <div className=' block md:flex justify-center space-y-2 md:space-y-0 md:space-x-2 md:px-20 w-full lg:w-10/12 p-2'>
                 <div className='bg-green-800 md:w-3/12 rounded-lg text-white p-3'>
                     <span className='flex justify-center font-bold text-2xl'>Category</span>
-                    <div className='text-center font-semibold'>* 10% off from IEI Members</div>
+                    <div className='text-center font-semibold'>* 10% off for IEI Members</div>
                     <div className='flex justify-center'><img src={regimg} alt="" className='p-4 w-52'/></div>
                 </div>
                 <div className='border border-gogreen md:w-3/12 rounded-lg p-3 flex flex-col justify-between'>
