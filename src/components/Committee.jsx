@@ -27,12 +27,12 @@ const Committee = () => {
         },
         { 
             title: "Conference Committee",
-            "Track 1": [{ name: "Name1", designation: "Designation" }],
-            "Track 2": [{ name: "Name2", designation: "Designation" }],
-            "Track 3": [{ name: "Name3", designation: "Designation" }],
-            "Track 4": [{ name: "Name4", designation: "Designation" }],
-            "Track 5": [{ name: "Name5", designation: "Designation" }],
-            "Track 6": [{ name: "Name6", designation: "Designation" }],
+            "Track1": [{ name: "Name1", designation: "Designation" }],
+            "Track2": [{ name: "Name2", designation: "Designation" }],
+            "Track3": [{ name: "Name3", designation: "Designation" }],
+            "Track4": [{ name: "Name4", designation: "Designation" }],
+            "Track5": [{ name: "Name5", designation: "Designation" }],
+            "Track6": [{ name: "Name6", designation: "Designation" }],
         },
         { 
             title: "Organizing Committee",
@@ -55,7 +55,7 @@ const Committee = () => {
         <div>
         <Navbar />
         {/* <section className="py-10 px-6 bg-blue-50"> */}
-            <h2 className="text-2xl font-bold text-center text-blue-900 mb-6 py-10">
+            <h2 className="text-2xl font-bold text-center text-go-green mb-6 py-10 ">
             Meet the Minds Behind the Mission
             </h2>
             {chiefPatrons.map((patron, index) => (

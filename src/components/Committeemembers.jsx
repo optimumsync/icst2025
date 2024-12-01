@@ -1,4 +1,5 @@
 import Profile from "../assets/profile.svg";
+// import HorizontalScrollCards from "./Horizontal";
 import React, { useState } from "react";
 
 const CommitteeMembers = (props) => {
@@ -7,7 +8,7 @@ const CommitteeMembers = (props) => {
   const [startIndex, setStartIndex] = useState(0);
 
   // Number of cards per page (2 rows * 3 cards)
-  const cardsPerPage = 6;
+  const cardsPerPage = 4;
 
   // Handle navigation for the carousel
   const handlePrev = () => {
@@ -23,8 +24,8 @@ const CommitteeMembers = (props) => {
   const visibleMembers = props.role[activeLink].slice(startIndex, startIndex + cardsPerPage);
 
   return (
-    <section className="bg-white py-10 px-40 max-w-5xl mx-auto relative">
-      <nav className="flex justify-center items-center space-x-6 py-4 border-b border-gray-200">
+    <section className="bg-white py-5 px-40 max-w-5xl mx-auto relative">
+      <nav className="flex justify-center flex-wrap items-center py-4 border-b border-gray-200">
         {links.map((link) => (
           <button
             key={link}
@@ -32,8 +33,8 @@ const CommitteeMembers = (props) => {
               setActiveLink(link);
               setStartIndex(0); // Reset carousel index when switching categories
             }}
-            className={`relative text-gray-800 font-semibold ${
-              activeLink === link ? "text-black" : "text-gray-600"
+            className={`ml-4 mr-4 relative text-gray-800 font-semibold ${
+              activeLink === link ? "text-black" : "text-gray-800"
             }`}
           >
             {link}
@@ -51,7 +52,7 @@ const CommitteeMembers = (props) => {
             <button
               onClick={handlePrev}
               disabled={startIndex === 0}
-              className={`absolute left-[-60px] top-1/2 transform -translate-y-1/2 bg-gogreen/80 hover:bg-gogreen text-white p-3 rounded-full ${
+              className={`absolute left-[60px] sm:left-[10px] top-1/2 transform -translate-y-1/2 bg-gogreen/80 hover:bg-gogreen text-white p-3 rounded-full ${
                 startIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
@@ -60,7 +61,7 @@ const CommitteeMembers = (props) => {
             <button
               onClick={handleNext}
               disabled={startIndex + cardsPerPage >= props.role[activeLink].length}
-              className={`absolute right-[-60px] top-1/2 transform -translate-y-1/2 bg-gogreen/80 hover:bg-gogreen text-white p-3 rounded-full ${
+              className={`absolute right-[60px] sm:right-[10px] top-1/2 transform -translate-y-1/2 bg-gogreen/80 hover:bg-gogreen text-white p-3 rounded-full ${
                 startIndex + cardsPerPage >= props.role[activeLink].length
                   ? "opacity-50 cursor-not-allowed"
                   : ""
@@ -72,11 +73,11 @@ const CommitteeMembers = (props) => {
         )}
   
         {/* Cards Grid */}
-        <ul className="grid grid-cols-3 gap-x-12 gap-y-12 py-10">
+        <ul className="flex justify-center flex-wrap gap-x-12 gap-y-12 py-5">
           {visibleMembers.map((member, index) => (
             <li
               key={index}
-              className="bg-gogreen/80 shadow-md p-5 rounded-lg text-center"
+              className="basis-1/3 bg-gogreen/80 shadow-md p-5 rounded-lg text-center"
             >
               <img src={Profile} alt="Profile" className="w-20 h-20 mx-auto mb-4" />
               <h4 className="text-lg font-semibold text-white">
@@ -93,4 +94,6 @@ const CommitteeMembers = (props) => {
     </section>
   );
 }
+
+
 export default CommitteeMembers;
