@@ -7,7 +7,7 @@ function Committee() {
   return (
     <div>
       <Navbar/>
-      {/* <CardCarousel /> */}
+      {/* <CardCarousel /> */}s
       <Footer/>
     </div>
   );

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
 import Notfound from "./components/Notfound";
-import Committee from "./components/Committee";
+import Committee from "./components/Committee2";
 import Track from "./components/Track";
 import ContactUs from './components/ContactUs';
 import Callforpapers from "./components/Callforpapers";
