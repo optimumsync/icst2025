@@ -44,6 +44,9 @@ function Callforpapers() {
           <a className="mx-4 bg-green-900 text-white p-2 px-4 rounded" href="https://www.ieindia.org/webui/IEI-Activities.aspx#Call_Papers">
             Manuscript Template
           </a>
+          <p className="mx-4 m-4 bg-yellow-100 border border-yellow-300 rounded-md p-2">
+            <b className="text-yellow-950">Note :</b><span className="text-yellow-800"> All authors must adhere to plagiarism guidelines and maintain a similarity index below 10% when checked with Turnitin software is an important requirement for paper submission.</span>
+          </p>
         </div>
         <div className="md:mx-9 lg:mx-20">
           <h2 className="font-bold mx-4 mt-6 text-xl text-green-800">
