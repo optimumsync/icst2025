@@ -123,9 +123,9 @@ const Slides = ({ data }) => {
         {data.map((card, index) => (
           <div
             key={index}
-            className="grid place-items-center w-full h-80 md:h-80"
+            className="grid place-items-center w-full h-80 md:h-80 p-3"
           >
-            <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto">
+            <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto hover:scale-105 transition-transform duration-300">
               <div className="font-semibold text-center">{card.type}</div>
               <div className="h-full flex flex-col justify-around">
                 <div className="flex justify-center">

@@ -90,7 +90,7 @@ const Navbar = () => {
           <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link to={"/"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 1 && 'underline decoration-4 decoration-logo3'}`} onClick={()=>{setIsOpen(!isOpen)}}>Home</Link>
             <Link to={"/about-us"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 2 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>About</Link>
-            <Link to={"/comittee"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 3 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Committee</Link>
+            <Link to={"/committee"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 3 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Committee</Link>
             <Link to={"/call-for-papers"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 4 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Call For Papers</Link>
             <Link to={"/track"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 5 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Track</Link>
             <Link to={"/registration"} className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-gogreen3 ${menu == 6 && 'underline decoration-4 decoration-logo3'} `} onClick={()=>{setIsOpen(!isOpen)}}>Registration</Link>

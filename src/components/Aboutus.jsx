@@ -1,6 +1,7 @@
 import React from "react";
 import Group4 from '../assets/Group 4.png'
 import nieImg from '../assets/NIE.jpeg'; 
+import nie_djb from '../assets/nie_djb.jpg'
 import ieiImg from '../assets/iei.jpeg'
 import dortmundImg from '../assets/FHDortmund.jpeg';
 import Navbar from './Navbar';
@@ -103,7 +104,7 @@ const Aboutus = () => {
                 </ul>
               </div>
               <div className="m-5 sm:m-0 order-1 flex items-center justify-end">
-                <img src={nieImg} alt="" />
+                <img src={nie_djb} alt="" className="rounded-2xl"/>
               </div>
             </div>
           </div>

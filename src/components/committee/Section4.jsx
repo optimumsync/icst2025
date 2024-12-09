@@ -106,9 +106,9 @@ const Slides = ({ data }) => {
         {data.map((card, index) => (
           <div
             key={index}
-            className="grid place-items-center w-full h-80 md:h-80"
+            className="grid place-items-center w-full h-80 md:h-80 p-3"
           >
-            <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto">
+            <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto hover:bg-red-500 hover:scale-105 transition-transform duration-300">
               <div className="font-semibold text-center">{card.type}</div>
               <div className="h-full flex flex-col justify-around">
                 <div className="flex justify-center">
@@ -388,11 +388,11 @@ const Advisory = () => {
             className="flex items-center justify-center text-black"
           >
             {console.log(index)}
-            <div className="h-80 md:h-80">
-              <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto">
+            <div className="h-80 md:h-80 p-3">
+              <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto hover:scale-105 transition-transform duration-300">
                 <div className="font-semibold text-center">{card.type}</div>
                 <div className="h-full flex flex-col justify-around">
-                  <div className="flex justify-center">
+                  <div className="flex justify-center overflow-hidden">
                     <img
                       src={!!card.imglink ? card.imglink : noimage}
                       className="rounded-full w-44 md:w-36"

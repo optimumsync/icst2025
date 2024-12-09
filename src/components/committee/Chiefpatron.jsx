@@ -31,7 +31,7 @@ const Slides = ({ data }) => {
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 4 },
+        settings: { slidesToShow: 3,slidesToScroll :3 },
       },
       {
         breakpoint: 640,
@@ -40,14 +40,14 @@ const Slides = ({ data }) => {
     ],
   };
   return (
-    <div className="container mx-auto py-4">
-      <Slider {...settings} className="h-full">
+    <div className="mx-auto py-4">
+      <Slider {...settings} className="h-full w-full">
         {data.map((card, index) => (
           <div
             key={index}
-            className="grid place-items-center w-full h-80 md:h-80"
+            className="grid place-items-center w-full my-3 h-80 md:h-80 hover:scale-105 transition-transform duration-300"
           >
-            <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto">
+            <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto ">
               <div className="font-semibold text-center">{card.type}</div>
               <div className="h-full flex flex-col justify-around">
                 <div className="flex justify-center">
