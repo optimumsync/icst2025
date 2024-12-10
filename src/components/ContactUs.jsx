@@ -26,19 +26,22 @@ const ContactSection = ({ title, content, email, phone, extraContent }) => (
           </p>
         )}
         {phone && (
-          <div className="mb-4">
-            <strong>Phone:</strong>
-            {Array.isArray(phone) ? (
-              <ul className="list-disc list-inside pl-6 mt-2 underline">
-                {phone.map((num, index) => (
-                  <li key={index}>{num}</li>
-                ))}
-              </ul>
-            ) : (
-              <span className="underline">{phone}</span>
-            )}
-          </div>
-        )}
+  <div className="mb-4">
+    <strong>Phone:</strong>
+    {Array.isArray(phone) ? (
+      <div className="inline">
+        <span className="underline">{phone[0]}</span>
+        {phone.slice(1).map((num, index) => (
+          <div key={index} className="ml-[52px] md:ml-[59px] underline ">{num}</div>
+        ))}
+      </div>
+    ) : (
+      <span className="underline">{phone}</span>
+    )}
+  </div>
+)}
+
+
         {extraContent && <div className="mt-4 text-gray-700">{extraContent}</div>}
       </div>
     </div>
