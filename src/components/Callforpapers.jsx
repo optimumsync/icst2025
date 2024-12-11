@@ -29,7 +29,7 @@ function Callforpapers() {
             Journal of Institution of Engineers (India) Series A-D through
             online submission at Microsoft CMT <a className="text-blue-600" href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICST2025">Click here</a> or&nbsp;
             <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICST2025" className="text-blue-600 hidden md:block">https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICST2025</a>
-            &nbsp;on or before 15th December 2024. The manuscript should follow the
+            &nbsp;on or before 31st December 2024. The manuscript should follow the
             standard IEI template <a href="https://www.ieindia.org/webui/iei-home.aspx" className="text-blue-600">Standard IEI template</a> or <a href="https://www.ieindia.org/webui/iei-home.aspx" className="text-blue-600 hidden md:block">https://www.ieindia.org/webui/iei-home.aspx</a>
             All submissions for the conference will be handled electronically on
             Microsoft CMT platform. The submitted papers will be peer-reviewed

@@ -9,6 +9,7 @@ import tree2 from "../../assets/tree2.svg";
 import Timer from "./Timer";
 import CardSlider from "./CardSlider";
 import Sponlogos from "./Sponlogos"
+import group35 from "../../assets/Group 35.svg"
 
 function Homecontent() {
   return (
@@ -109,6 +110,9 @@ function Homecontent() {
         </div>
         <div className="text-slate-900"><div className="text-gogreen text-2xl font-bold text-center my-4 md:my-8">Meet Our Sponsors</div><CardSlider/></div>
       </div>
+
+      <div className='text-gogreen text-2xl text-center font-semibold my-3'>Important Dates</div>
+            <div className='m-4 flex justify-center'><span className='md:w-1/2'><img src={group35} alt="" /></span></div>
     </div>
   );
 }
