@@ -7,42 +7,42 @@ import ioe_logo from '../assets/ioe_logo.svg'
 import img1 from '../assets/img-1.png'
 import img2 from '../assets/img-2.png'
 import img3 from '../assets/img-3.png'
+import FileDownloader from "../components/Download"
+import broucher from "../assets/conclave.pdf"
 
 function Conclave() {
   return (
     <div>
       <Navbar />
       <div className="bg-gogreen shadow-md shadow-slate-700 p-3">
-        <h1 className="text-center text-3xl md:text-5xl font-bold my-5 text-white">2nd INTERNATIONAL CONCLAVE ON SUSTAINABLE TECHNOLOGIES FOR MSME SECTOR</h1>
+        <h1 className="text-center text-3xl md:text-4xl font-bold my-5 text-white">2nd International conclave on Sustainable Technologies for MSME sector</h1>
         <div className="font-semibold my-5 flex justify-center w-full">
           <div className="md:w-7/12 text-center z-10 text-white text-lg md:text-xl">
             19th and 20th February 2025
           </div>
         </div>
         <div className="flex flex-col md:flex-row text-center items-stretch justify-center gap-10 my-10 mx-auto w-3/4 text-lg font-semibold">
-          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-5 border shadow-md ">
+          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-3 border rounded-s-3xl shadow-md ">
             <div>Organized by :</div>
             <div><img src={nie_logo} alt="nie_logo" className="w-auto h-16" /></div>
             <div>The National Institute of Engineering</div>
           </div>
 
-          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-5 border shadow-md">
+          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-3 border shadow-md">
             <div>In Collaboration with :</div>
             <div><img src={fd_logo} alt="fd_logo" className="w-auto h-16" /></div>
             <div>FH Dortmund University Germany</div>
           </div>
 
-          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-5 border shadow-md">
+          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-3 border rounded-e-3xl shadow-md">
             <div>Technically Co Sponsored by :</div>
             <div><img src={ioe_logo} alt="ioe_logo" className="w-auto h-16" /></div>
             <div>The Institution of Engineers(India), Mysuru Local Center.</div>
           </div>
         </div>
 
-        <div className='text-center text-white text-lg md:text-xl font-semibold'>
-          <div>Venue :</div>
-          <div>Diamond Jubilee Sports Complex, NIE, Mysore, India</div>
-          <div>For Participation & registration, visit: icstnie2025.com</div>
+        <div className='text-center text-white text-lg md:text-lg font-semibold my-3'>
+          <div>Venue : Diamond Jubilee Sports Complex, NIE, Mysore, India</div>
         </div>
       </div>
 
@@ -59,9 +59,10 @@ function Conclave() {
 
         <p className='m-6 md:m-10'>Mysuru is an ideal host for ICST 2025, celebrated for its historical architecture, vibrant cultural heritage, and commitment to environmental cleanliness. Recognized as one of India's cleanest cities, Mysuru combines traditional charm with modern connectivity, making it accessible by air, rail, and road, Located amid lush agricultural and horticultural landscapes, Mysuru is also a rising industrial center, balancing historical legacy with contemporary innovation</p>
 
-        <p className='m-6 md:m-10'>Join us in Mysuru to be part of meaningful dialogues, experience collaborative sessions, and witness groundbreaking innovations that shape the future of sustainable technology.
-          For more details, visit: https://icstnie2025.com/home</p>
+        <p className='m-6 md:m-10'>Join us in Mysuru to be part of meaningful dialogues, experience collaborative sessions, and witness groundbreaking innovations that shape the future of sustainable technology.</p>
       </div>
+
+      <div className='flex justify-center'><FileDownloader fileName={"Conclave Broucher"} fileUrl={broucher}/></div>
 
       <div className="flex flex-col justify-center items-center w-full">
         <div className='bg-white border-2 border-[#14532D] p-5 m-10 rounded-3xl  mx-auto max-w-[80%] w-full' style={{ borderLeft: '10px solid green', borderRight: '10px solid green' }} >
@@ -326,6 +327,23 @@ function Conclave() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className='flex justify-center'>
+        <div className='bg-white border-2 border-[#14532D] flex flex-col md:flex-row  justify-between m-6 md:m-10 mx-auto p-3 px-6 md:px-12 rounded-2xl max-w-[80%] w-full min-h-[250px]' style={{ borderLeft: '10px solid green', borderRight: '10px solid green' }}>
+          <div className='w-3/4'>
+            <div className='text-white font-bold text-2xl bg-[#14532D] p-2 m-6 mb-2 w-[90%] md:w-1/2 rounded-md'>
+              Contact-us
+            </div>
+            <div className='p-2 md:px-6 font-semibold text-xl'>
+              <div>
+                <div>Email : <a href="mailto:nie_conclave@nie.ac.in" className='font-medium'>nie_conclave@nie.ac.in</a></div>
+                <div className='flex'><span>Phone No. :</span><span className='ps-1 font-medium'><p> +91 9972695511</p> <p>+91 9036949487</p></span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
         </div>
 
       </div>

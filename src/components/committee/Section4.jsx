@@ -20,9 +20,9 @@ function Section4() {
             setTabs(1);
           }}
         >
-          Advisory
+          Advisory Committee
         </button>
-        <button
+        {/* <button
           className={`${
             tabs == 2 && "border-b-4 border-b-orange-400 font-bold"
           }`}
@@ -41,7 +41,7 @@ function Section4() {
           }}
         >
           Faculty co&#8209;ordinator
-        </button>
+        </button> */}
       </div>
       <div>{rendertabs(tabs)}</div>
     </div>
@@ -349,6 +349,12 @@ const Advisory = () => {
         "Department of Information Technology, Manipal Institute of Technology, Bengaluru",
       imglink: "https://pydata.org/global2021/media/speaker_photos/Dr_SAK_Taiwan.jpg.256x256_q85.jpg",
     },
+    {
+      name : "Dr. Likith Kumar M V",
+      designation: "Associate Professor & Head IQAC",
+      department : "Department of Electrical and Electronics Engineering",
+      imglink:"https://nie.ac.in/wp-content/uploads/2021/09/LMV_New2-e1632814350742.jpg"
+    }
   ];
   const slides = Array.from({ length: 12 }, (_, i) => `Item ${i + 1}`);
   //   return <Slides data={data}/>
@@ -388,8 +394,8 @@ const Advisory = () => {
             className="flex items-center justify-center text-black"
           >
             {console.log(index)}
-            <div className="h-80 md:h-80 p-3">
-              <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-3 mx-auto hover:scale-105 transition-transform duration-300">
+            <div className="h-80 md:h-80 md:p-3">
+              <div className="bg-gogreen4 text-white shadow-lg rounded-lg w-[95%] h-full md:w-60 p-2 md:p-3 mx-auto hover:md:scale-105 transition-transform duration-300">
                 <div className="font-semibold text-center">{card.type}</div>
                 <div className="h-full flex flex-col justify-around">
                   <div className="flex justify-center overflow-hidden">

@@ -53,7 +53,7 @@ const contactDetails = [
     title: 'General Inquiries',
     content:
       'For general questions about the conference, including program details, schedules, or participation opportunities, please reach out to us:',
-    email: 'icst-nie2025+general@nie.ac.in',
+    email: 'icst-nie2025@nie.ac.in',
     phone: ['+91 99726 95511', '+91 81054 73206', '+91 98606 03195'],
     extraContent: (
       <p>
@@ -65,14 +65,14 @@ const contactDetails = [
     title: 'Paper Submission Queries',
     content:
       'If you have questions related to paper submissions, guidelines, or the review process, please contact our Paper Submission Committee:',
-    email: 'icst-nie2025+submissions@nie.ac.in',
+    // email: 'icst-nie2025+submissions@nie.ac.in',
     phone: ['+91 95351 44563', '+91 98606 03195'],
   },
   {
     title: 'Sponsorship',
     content:
       'Interested in sponsoring or exhibiting at the conference? Contact our Sponsorship Chair for more details:',
-    email: 'icst-nie2025+sponsors@nie.ac.in',
+    // email: 'icst-nie2025+sponsors@nie.ac.in',
     phone: '+91 99726 95511',
   },
   {
@@ -96,14 +96,14 @@ const contactDetails = [
     title: 'Accommodation and Travel Assistance',
     content:
       'For assistance with hotel accommodations, travel arrangements, or any other logistical support, please reach out to our Hospitality Committee:',
-    email: 'icst-nie2025+hospitality@nie.ac.in',
+    // email: 'icst-nie2025+hospitality@nie.ac.in',
     phone: '+91 77950 00707',
   },
   {
     title: 'Registration Support',
     content:
       'If you encounter any issues or have questions regarding conference registration, please contact our Registration Committee:',
-    email: 'icst-nie2025+registration@nie.ac.in',
+    // email: 'icst-nie2025+registration@nie.ac.in',
     phone: '+91 76673 06024',
   },
 ];

@@ -23,7 +23,7 @@ const Slides = ({ data }) => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 4,
     // arrows:true,
     nextArrow: <CustomArrow direction="right" />,
@@ -98,6 +98,12 @@ const Slides = ({ data }) => {
 function Chiefpatron() {
   const data = [
     {
+      name: "Dr. Vidyashankar S",
+      designation: "Hon'ble Vice Chancellor",
+      department: "VTU-Belagavi",
+      imglink: "https://www.vtu-online.net/assets/images/Dr_S_Vidyashankar.jpg",
+    },
+    {
       name: "Sri Ranganath M.S.",
       designation: "Hon. President",
       department: "NIE-MC",
@@ -121,35 +127,11 @@ function Chiefpatron() {
       department: "NIE-MC",
       imglink: "https://nie.ac.in/wp-content/uploads/elementor/thumbs/Mr-Deepak-H-S-Director-qpu52z7d12mretwzv1a2lakyeedu399pg4bco86s78.jpeg",
     },
-    {
-      name: "Dr. B. E. Rangaswamy",
-      designation: "Registrar",
-      department: "VTU - Belagavi",
-      imglink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ1jlbd__6-luRmg-QxCYD2lC_iwEKBgzMaw&s",
-    },
-    {
-      name: "Dr. T. N. Sreenivasa",
-      designation: "Registrar (Evaluation)",
-      department: "VTU - Belagavi",
-      imglink: "https://vtu.ac.in/wp-content/uploads/2022/12/resir.png",
-    },
-    {
-      name: "Dr. Rohini Nagapadma",
-      designation: "Principal",
-      department: "The National Institute of Engineering (NIE), Mysuru",
-      imglink: "https://nie.ac.in/wp-content/uploads/2022/06/rnp-principal-300x290.jpeg",
-    },
-    {
-      name: "Dr. K.C. Manjunath",
-      designation: "Vice Principal",
-      department: "The National Institute of Engineering (NIE), Mysuru",
-      imglink: "https://nie.ac.in/wp-content/uploads/2019/02/DrKCM-VP-South.jpg",
-    },
   ];
 
   return (
     <div className="">
-      <div className="text-gogreen text-2xl text-center font-semibold underline underline-2">Chief Patron</div>
+      <div className="text-gogreen text-2xl text-center font-semibold underline underline-2">Chief Patrons</div>
       <Slides data={data} />
     </div>
   );
