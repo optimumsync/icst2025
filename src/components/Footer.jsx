@@ -46,10 +46,10 @@ function Footer() {
               <EmailIcon className="self-center me-2" fontSize="large" />
               <a
                 className="self-center"
-                href="mailto:icst-nie2025+general@nie.ac.in"
+                href="mailto:icst-nie2025@nie.ac.in"
               >
                 {" "}
-                icst-nie2025+general@nie.ac.in{" "}
+                icst-nie2025@nie.ac.in{" "}
               </a>
             </div>
           </div>

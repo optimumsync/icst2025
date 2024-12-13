@@ -94,7 +94,7 @@ const Slides = ({ data }) => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     // arrows:true,
     nextArrow: <CustomArrow direction="right" />,
@@ -102,7 +102,7 @@ const Slides = ({ data }) => {
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 3 },
+        settings: { slidesToShow: 2 },
       },
       {
         breakpoint: 640,
@@ -111,7 +111,7 @@ const Slides = ({ data }) => {
     ],
   };
   return (
-    <div className="container mx-auto py-4">
+    <div className="container mx-auto py-4 lg:px-48">
       <Slider {...settings} className="h-full">
         {data.map((card, index) => (
           <div
@@ -177,6 +177,13 @@ const rendertabs = (tabs) => {
         department: "Dept. of EE, NIE, Mysuru",
         imglink: "https://nie.ac.in/wp-content/uploads/2023/11/Jayasankar-eee.jpg",
       },
+      {
+        type: "Co-chair",
+        name: "Dr. Rohith K Mathew",
+        designation: "Associate Professor",
+        department: "Dept. of EE, NIE, Mysuru",
+        imglink: "https://nie.ac.in/wp-content/uploads/2021/04/RKM.jpg",
+      },
     ],
     "Track 2": [
       {
@@ -185,6 +192,13 @@ const rendertabs = (tabs) => {
         designation: "Associate Professor",
         department: "Dept. of ECE, NIE, Mysuru",
         imglink: "https://nie.ac.in/wp-content/uploads/2020/09/Rajalekshmi-Kishore-ece.jpg",
+      },
+      {
+        type: "Co-chair",
+        name: "Dr. Kavitha S S",
+        designation: "Associate Professor",
+        department: "Dept. of ECE, NIE, Mysuru",
+        imglink: "https://nie.ac.in/wp-content/uploads/2019/02/kavitha-ec.jpg",
       },
     ],
     "Track 3": [
@@ -195,6 +209,13 @@ const rendertabs = (tabs) => {
         department: "Dept. of CHE, NIE, Mysuru",
         imglink: "https://nie.ac.in/wp-content/uploads/2019/02/drsangamesh.png",
       },
+      {
+        type: "Co-chair",
+        name: "Dr. Sansarkashan",
+        designation: "Assistant Professor",
+        department: "Dept. of Physics, NIE, Mysuru",
+        imglink: "https://nie.ac.in/wp-content/uploads/2019/04/Sankarshan-1.jpg",
+      },
     ],
     "Track 4": [
       {
@@ -203,6 +224,13 @@ const rendertabs = (tabs) => {
         designation: "Associate Professor",
         department: "Dept. of CVE, NIE, Mysuru",
         imglink: "https://nie.ac.in/wp-content/uploads/2019/02/balajinc.png",
+      },
+      {
+        type: "Co-chair",
+        name: "Mr. Prasantakumar Samal",
+        designation: "Associate Professor",
+        department: "Dept. of ME, NIE, Mysuru",
+        imglink: "https://nie.ac.in/wp-content/uploads/2019/02/Prasanta-kumar-samal-1.jpg",
       },
     ],
     "Track 5": [
@@ -213,6 +241,13 @@ const rendertabs = (tabs) => {
         department: "Dept. of CSE, NIE, Mysuru",
         imglink: "https://nie.ac.in/wp-content/uploads/2019/03/bsj-cse.jpg",
       },
+      {
+        type: "Co-chair",
+        name: "Dr. Shashank D",
+        designation: "Associate professor",
+        department: "Dept. of ISE, NIE, Mysuru",
+        imglink: "https://nie.ac.in/wp-content/uploads/2019/03/sd-ise-1.jpg",
+      },
     ],
     "Track 6": [
       {
@@ -221,6 +256,13 @@ const rendertabs = (tabs) => {
         designation: "Assistant Professor",
         department: "Dept. of CVE, NIE, Mysuru",
         imglink: "https://nie.ac.in/wp-content/uploads/2022/10/Vasanth-Keshav.jpg",
+      },
+      {
+        type: "Co-chair",
+        name: "Dr. K. Gourav",
+        designation: "Assistant Professor",
+        department: "Dept. of CVE, NIE, Mysuru",
+        imglink: "https://nie.ac.in/wp-content/uploads/2019/02/2-2-1.jpg",
       },
     ],
   };

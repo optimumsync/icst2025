@@ -6,6 +6,7 @@ import Section1 from "./committee/Section1";
 import Section2_tracks from "./committee/Section2_tracks";
 import Section3 from "./committee/Section3";
 import Section4 from "./committee/Section4";
+import Patron from "./committee/Patron"
 
 function Committee() {
   return (
@@ -17,6 +18,7 @@ function Committee() {
         <p className="text-center text-green-800 font-semibold">"Meet the Minds Behind the Mission"</p>
         </div>
         <Chiefpatron/>
+        <Patron/>
         <div className="lg:mx-20 xl:mx-40 my-3 md:my-4"><Section1/></div>
         <Section2_tracks/>
         <div className="lg:mx-20 xl:mx-40"><Section3/></div>

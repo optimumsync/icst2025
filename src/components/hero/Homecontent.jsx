@@ -10,6 +10,8 @@ import Timer from "./Timer";
 import CardSlider from "./CardSlider";
 import Sponlogos from "./Sponlogos"
 import group35 from "../../assets/Group 35.svg"
+import FileDownloader from "../../components/Download"
+import broucher from "../../assets/Conference.pdf"
 
 function Homecontent() {
   return (
@@ -85,6 +87,8 @@ function Homecontent() {
               <Timer targetDate="2025-02-19T10:00:00" />
             </div>
           </div>
+          
+          <div className="flex justify-center"><FileDownloader fileName='Conference Broucher' fileUrl={broucher}/></div>
         </div>
       </div>
 
