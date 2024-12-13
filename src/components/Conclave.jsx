@@ -7,8 +7,115 @@ import ioe_logo from '../assets/ioe_logo.svg'
 import img1 from '../assets/img-1.png'
 import img2 from '../assets/img-2.png'
 import img3 from '../assets/img-3.png'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+
+const SponsorshipData = [
+  {
+    title: 'Platinum Sponsors',
+    description: [
+      'Keynote address during the Conclave.',
+      'Exhibit stall space of 30 ft x 10 ft.',
+      'Free registrations for 5 participants.'
+    ],
+    amount: '₹3 Lakhs'
+  },
+  {
+    title: 'Gold Sponsors',
+    description: [
+      'Presentation during the Conclave.',
+      'Exhibit Stall space of 20 ft x 10 ft.',
+      'Free registrations for 3 participants.'
+    ],
+    amount: '₹1 Lakhs'
+  },
+  {
+    title: 'Silver Sponsors',
+    description: [
+      'Exhibit stall space of 10 ft x 10 ft.',
+      'Free registrations for 2 participants.'
+    ],
+    amount: '₹50 Thousand'
+  },
+  {
+    title: 'Associate Sponsors',
+    description: [
+      'Exhibit stall space of 10 ft x 10 ft.',
+      'Free registrations for 1 participants.'
+    ],
+    amount: '₹30 Thousand'
+  }
+]
+
+const RegistrationData = [
+  {
+    title: 'Companies',
+    description: 'Engineers, Technocrats, Decision-makers, Directors, CEOs and others',
+    amount: '₹ 2000'
+  },
+  {
+    title: 'Research Organization & NGOs',
+    description: 'Scientists, Research Fellows, Scholars, Technologists, Non Government Organizations, etc.',
+    amount: '₹ 1500'
+  },
+  {
+    title: 'Individual Registrations',
+    description: 'Pioneer Investors, Venture Capitalists, Potential Entrepreneurs, Technology Leaders etc.',
+    amount: '₹ 1000'
+  },
+  {
+    title: 'Associate Sponsors',
+    description: 'Faculty from Academic Institutions',
+    amount: '₹ 500'
+  }
+]
+
 
 function Conclave() {
+  const CustomNextArrow = ({ onClick }) => (
+    <div
+      onClick={onClick}
+      className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 z-10 bg-[#3c5e4b] rounded-full w-12 h-12 flex items-center justify-center cursor-pointer text-white hover:bg-[#2a4434] transition-colors"
+    >
+      <FaChevronRight className="w-6 h-6" />
+    </div>
+  );
+
+  const CustomPrevArrow = ({ onClick }) => (
+    <div
+      onClick={onClick}
+      className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 z-10 bg-[#3c5e4b] rounded-full w-12 h-12 flex items-center justify-center cursor-pointer text-white hover:bg-[#2a4434] transition-colors"
+    >
+      <FaChevronLeft className="w-6 h-6" />
+    </div>
+  );
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       <Navbar />
@@ -47,24 +154,29 @@ function Conclave() {
       </div>
 
       <div className='p-6 md:px-[80px] md:pb-1 text-xl'>
-        <p className='m-6 md:m-10'>In our rapidly evolving world, sustainable technology is becoming essential for addressing pressing environmental challenges. Non-renewable energy sources, while still prominent, are finite and contribute significantly to greenhouse gas emissions and climate change. Sustainable technology offers renewable and environmentally responsible alternatives that can reduce these impacts and support a healthier planet.</p>
+        <p className='m-6 md:m-10 text-3xl'>In our rapidly evolving world, sustainable technology is becoming essential for addressing pressing environmental challenges. Non-renewable energy sources, while still prominent, are finite and contribute significantly to greenhouse gas emissions and climate change. Sustainable technology offers renewable and environmentally responsible alternatives that can reduce these impacts and support a healthier planet.</p>
 
-        <p className='m-6 md:m-10'>The Clean Fuels International Conclave 2022, was organized by NIE on November 2-3 at Silent Shores Convention Centre in Mysuru, India. It was dedicated to exploring the theme of the evolving biofuel ecosystem in India and the growing investment opportunities within it. The event was further enriched by the valuable international collaborations established through partnerships with Tech4Fuels, OWI, and the FH Dortmund University of Applied Sciences and Arts.</p>
+        <p className='m-6 md:m-10 text-3xl'>The Clean Fuels International Conclave 2022, was organized by NIE on November 2-3 at Silent Shores Convention Centre in Mysuru, India. It was dedicated to exploring the theme of the evolving biofuel ecosystem in India and the growing investment opportunities within it. The event was further enriched by the valuable international collaborations established through partnerships with Tech4Fuels, OWI, and the FH Dortmund University of Applied Sciences and Arts.</p>
 
-        <p className="m-6 md:m-10 bg-[#14532D] text-center w-[300px] ml-[40px] text-white font-bold text-3xl">ICST 2025 Conclave</p>
+        <div className='text-5xl flex justify-center items-center border-y-[3px] border-black p-4 mx-10 m-14 text-[#ebc136]'>
+          ICST 2025 Conclave
+        </div>
 
-        <p className='m-6 md:m-10'>Continuing the legacy, The International conclave on Sustainable technologies has been organized in Feb 2025. The ICST 2025 Conclave aims to address challenges within the sustainable technology landscape, including land allocation, feedstock supply chains, affordable financing, and innovative market creation. By bringing together global thought leaders, researchers, and industry experts, this event will facilitate meaningful discussions and propose solutions to accelerate the adoption of sustainable practices across various sectors, ultimately supporting the development of a resilient and eco-friendly future.</p>
+        <div className='bg-[#688d78] text-white p-6 m-8 rounded-3xl text-3xl'>
+          <p className='m-6 md:m-10'>Continuing the legacy, The International conclave on Sustainable technologies has been organized in Feb 2025. The ICST 2025 Conclave aims to address challenges within the sustainable technology landscape, including land allocation, feedstock supply chains, affordable financing, and innovative market creation. By bringing together global thought leaders, researchers, and industry experts, this event will facilitate meaningful discussions and propose solutions to accelerate the adoption of sustainable practices across various sectors, ultimately supporting the development of a resilient and eco-friendly future.</p>
 
-        <p className='m-6 md:m-10'>We warmly invite all stakeholders committed to sustainable progress to participate in the International Conclave on Sustainable Technology (ICST 2025) σπ February 19th & 20th, 2025, in Mysuru, India. This global platform is dedicated to fostering discussions and collaborations among industry experts, policymakers, business leaders, academics, researchers, and educational pioneers in the field of sustainability</p>
+          <p className='m-6 md:m-10'>We warmly invite all stakeholders committed to sustainable progress to participate in the International Conclave on Sustainable Technology (ICST 2025) σπ February 19th & 20th, 2025, in Mysuru, India. This global platform is dedicated to fostering discussions and collaborations among industry experts, policymakers, business leaders, academics, researchers, and educational pioneers in the field of sustainability</p>
 
-        <p className='m-6 md:m-10'>Mysuru is an ideal host for ICST 2025, celebrated for its historical architecture, vibrant cultural heritage, and commitment to environmental cleanliness. Recognized as one of India's cleanest cities, Mysuru combines traditional charm with modern connectivity, making it accessible by air, rail, and road, Located amid lush agricultural and horticultural landscapes, Mysuru is also a rising industrial center, balancing historical legacy with contemporary innovation</p>
+          <p className='m-6 md:m-10'>Mysuru is an ideal host for ICST 2025, celebrated for its historical architecture, vibrant cultural heritage, and commitment to environmental cleanliness. Recognized as one of India's cleanest cities, Mysuru combines traditional charm with modern connectivity, making it accessible by air, rail, and road, Located amid lush agricultural and horticultural landscapes, Mysuru is also a rising industrial center, balancing historical legacy with contemporary innovation</p>
 
-        <p className='m-6 md:m-10'>Join us in Mysuru to be part of meaningful dialogues, experience collaborative sessions, and witness groundbreaking innovations that shape the future of sustainable technology.
-          For more details, visit: https://icstnie2025.com/home</p>
+          <p className='m-6 md:m-10'>Join us in Mysuru to be part of meaningful dialogues, experience collaborative sessions, and witness groundbreaking innovations that shape the future of sustainable technology.
+            For more details, visit: https://icstnie2025.com/home</p>
+        </div>
       </div>
 
+
       <div className="flex flex-col justify-center items-center w-full">
-        <div className='bg-white border-2 border-[#14532D] p-5 m-10 rounded-3xl  mx-auto max-w-[80%] w-full' style={{ borderLeft: '10px solid green', borderRight: '10px solid green' }} >
+        <div className='bg-[#d9d9d9] p-5 my-10  rounded-2xl  mx-auto max-w-[80%] w-full'>
           <div className='px-6'>
             <div className='text-white font-bold text-xl md:text-2xl bg-[#14532D] p-2 m-6 w-3/4 md:w-1/6 rounded-md'>
               OBJECTIVE
@@ -80,10 +192,8 @@ function Conclave() {
           </div>
         </div>
 
-        <div className='bg-white border-2 border-[#14532D] p-5 m-10 rounded-3xl  mx-auto max-w-[80%] w-full' style={{ borderLeft: '10px solid green', borderRight: '10px solid green' }}>
-
+        <div className='bg-[#d9d9d9] p-5 my-10  rounded-2xl  mx-auto max-w-[80%] w-full'>
           <div className='px-6'>
-
             <div className='text-white font-bold text-2xl bg-[#14532D] p-2 m-6 w-3/4 md:w-1/6 rounded-md'>
               WE INVITE
             </div>
@@ -107,9 +217,8 @@ function Conclave() {
           </div>
         </div>
 
-        <div className='bg-white border-2 border-[#14532D] flex flex-col md:flex-row  justify-between m-6 md:m-10 mx-auto p-3 px-6 md:px-12 rounded-2xl max-w-[80%] w-full' style={{ borderLeft: '10px solid green', borderRight: '10px solid green' }}>
+        <div className='bg-[#d9d9d9] p-5 my-10  rounded-2xl  mx-auto max-w-[80%] w-full flex flex-col md:flex-row  justify-between m-6 md:m-10  px-6 md:px-12'>
           <div className='w-3/4'>
-
             <div className='text-white font-bold text-2xl bg-[#14532D] p-2 m-6 w-[90%] rounded-md'>
               SPONSORS & EXHIBITORS PRESENTATION
             </div>
@@ -130,11 +239,7 @@ function Conclave() {
           </div>
         </div>
 
-        <div
-          className="bg-white border-2 border-[#14532D] flex flex-col md:flex-row  justify-between m-6 md:m-10 mx-auto p-3 px-6 md:px-12 rounded-2xl max-w-[80%] w-full"
-          style={{ borderLeft: '10px solid green', borderRight: '10px solid green' }}
-        >
-
+        <div className="bg-[#d9d9d9] p-5 my-10  rounded-2xl  mx-auto max-w-[80%] w-full flex flex-col md:flex-row  justify-between m-6 md:m-10  px-6 md:px-12">
           <div className='w-3/4'>
             <div
               className="text-white font-bold text-2xl bg-[#14532D] p-2 m-6 mb-2 w-[90%] md:w-1/2 rounded-md">
@@ -161,7 +266,7 @@ function Conclave() {
 
 
 
-        <div className='bg-white border-2 border-[#14532D] flex flex-col md:flex-row  justify-between m-6 md:m-10 mx-auto p-3 px-6 md:px-12 rounded-2xl max-w-[80%] w-full min-h-[250px]' style={{ borderLeft: '10px solid green', borderRight: '10px solid green' }}>
+        <div className='bg-[#d9d9d9] p-5 my-10  rounded-2xl  mx-auto max-w-[80%] w-full flex flex-col md:flex-row  justify-between m-6 md:m-10  px-6 md:px-12'>
           <div className='w-3/4'>
             <div className='text-white font-bold text-2xl bg-[#14532D] p-2 m-6 mb-2 w-[90%] md:w-1/2 rounded-md'>
               POSTER PRESENTATION
@@ -186,151 +291,76 @@ function Conclave() {
         </div>
       </div>
 
-      <div>
-        {/* Sponsorship Section */}
-        <div className="flex justify-center items-center w-full font-semibold">
-          <div className="border-2 border-[#145430] m-6 md:m-10 mx-auto p-3 px-6 md:px-12 rounded-2xl max-w-[80%] w-full border-l-8 border-r-8 border-l-green-700 border-r-green-700">
-            <div className="px-6 font-bold text-2xl md:text-4xl text-[#145430]">Sponsorship</div>
-            <div className="flex flex-col md:flex-row p-3 gap-6 md:gap-10">
-
-              <div className="flex flex-col w-full gap-4">
-
-                <div className="flex flex-col md:flex-row items-stretch gap-6">
-                  <div className="border-2 border-l-4 border-r-4 border-l-green-700 border-r-green-700 border-black p-3 rounded-lg flex-grow">
-                    <h3 className='text-[#145430] text-xl md:text-2xl font-semibold'>Platinum Sponsors</h3>
-                    <div className="px-4 ">
-                      <li className='text-lg'>Keynote address during the Conclave</li>
-                      <li className='text-lg'>Exhibit Stall space of 30 ft x 10 ft</li>
-                      <li className='text-lg'>Free registrations for 5 participants</li>
-                    </div>
-                  </div>
-                  <div className="border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-3 rounded-lg flex items-center justify-center w-full md:w-[30%] ">
-                    <p className="text-center text-xl md:text-2xl font-bold text-[#145430]  ">₹ 3 Lakhs<br />per participant</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col md:flex-row items-stretch gap-6">
-                  <div className="border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-3 rounded-lg flex-grow">
-                    <h3 className='text-[#145430] text-xl md:text-2xl font-semibold'>Gold Sponsors</h3>
-                    <div className="px-4 ">
-                      <li className='text-lg'>Presentation during the Conclave</li>
-                      <li className='text-lg'>Exhibit Stall space of 20 ft x 10 ft</li>
-                      <li className='text-lg'>Free registrations for 3 participants</li>
-                    </div>
-                  </div>
-                  <div className="border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-3 rounded-lg flex items-center justify-center w-full md:w-[30%] ">
-                    <p className="text-center text-xl md:text-2xl font-bold text-[#145430] ">₹ 1 Lakh<br />per participant</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col md:flex-row items-stretch gap-6">
-                  <div className="border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-3 rounded-lg flex-grow">
-                    <h3 className='text-[#145430] text-xl md:text-2xl font-semibold'>Silver Sponsors</h3>
-                    <div className="px-4 ">
-                      <li className='text-lg'>Exhibit Stall space of 10 ft x 10 ft</li>
-                      <li className='text-lg'>Free registrations for 2 participants</li>
-                    </div>
-                  </div>
-                  <div className="border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-3 rounded-lg flex items-center justify-center w-full md:w-[30%] ">
-                    <p className="text-center text-xl md:text-2xl font-bold text-[#145430] ">₹ 50 Thousand<br />per participant</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col md:flex-row items-stretch gap-6">
-                  <div className="border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-3 rounded-lg flex-grow">
-                    <h3 className='text-[#145430] text-xl md:text-2xl font-semibold'>Associate Sponsors</h3>
-                    <div className="px-4 ">
-                      <li className='text-lg'>Exhibit Stall space of 10 ft x 10 ft</li>
-                      <li className='text-lg'>Free registrations for 1 participant</li>
-                    </div>
-                  </div>
-                  <div className="border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-3 rounded-lg flex items-center justify-center w-full md:w-[30%] ">
-                    <p className="text-center text-xl md:text-2xl font-bold text-[#145430] ">₹ 30 Thousand<br />per participant</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Registration Fee Section */}
-        <div className="flex justify-center items-center w-full font-semibold leading-normal">
-          <div className="border-2 border-[#145430] border-l-8 border-r-8 border-l-green-700 border-r-green-700 m-6 md:m-10 mx-auto p-3 px-6 md:px-12 rounded-2xl max-w-[80%] w-full">
-            <div className="px-6 font-bold text-2xl md:text-4xl text-[#145430]">Registration Fee</div>
-            <div className="flex flex-col md:flex-row p-3 gap-6 md:gap-10">
-
-              <div className="flex flex-col w-full gap-4">
-
-                <div className="flex flex-row items-stretch gap-6">
-                  <div className="flex-grow border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-4 rounded-lg">
-                    <span className="font-semibold text-[#145430] text-xl md:text-2xl block">Companies</span>
-                    <div className="text-lg">
-                      Engineers, Technocrats, Decision-makers, Directors, CEOs, and others
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-center border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-4 rounded-lg w-[300px]">
-                    <div className="text-center text-xl md:text-2xl font-bold text-[#145430]">
-                      ₹ 2000
-                      <br />
-                      <span className="text-sm">per participant</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-row items-stretch gap-6">
-                  <div className="flex-grow border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-4 rounded-lg">
-                    <span className="font-semibold text-[#145430] text-xl md:text-2xl block">Research Organizations & NGOs</span>
-                    <div className="text-lg">
-                      Scientists, Research Fellows, Scholars, Technologists, Non-Government Organizations, etc.
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-center border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-4 rounded-lg w-[300px]">
-                    <div className="text-center text-xl md:text-2xl font-bold text-[#145430]">
-                      ₹ 1500
-                      <br />
-                      <span className="text-sm">per participant</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-row items-stretch gap-6">
-                  <div className="flex-grow border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-4 rounded-lg">
-                    <span className="font-semibold text-[#145430] text-xl md:text-2xl block">Individual Registrations</span>
-                    <div className="text-lg">
-                      Pioneer Investors, Venture Capitalists, Potential Entrepreneurs,
-                      Technology Leaders, etc.
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-center border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-4 rounded-lg w-[300px]">
-                    <div className="text-center text-xl md:text-2xl font-bold text-[#145430]">
-                      ₹ 1000
-                      <br />
-                      <span className="text-sm">per participant</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-row items-stretch gap-6">
-                  <div className="flex-grow border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-4 rounded-lg">
-                    <span className="font-semibold text-[#145430] text-xl md:text-2xl block">Academia</span>
-                    <div className="text-lg">Faculty from Academic Institutions</div>
-                  </div>
-                  <div className="flex items-center justify-center border-2 border-[#145430] border-l-4 border-r-4 border-l-green-700 border-r-green-700 p-4 rounded-lg w-[300px]">
-                    <div className="text-center text-xl md:text-2xl font-bold text-[#145430]">
-                      ₹ 500
-                      <br />
-                      <span className="text-sm">per participant</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div className='mx-96 flex justify-center items-center text-5xl border-b-[3px] border-b-[#ebc136] pb-4'>
+        Sponsorship
       </div>
+
+      {/* Sponsorship Section */}
+      <div className="w-3/4 m-auto mt-10 mb-20">
+        <Slider {...settings}>
+          {SponsorshipData.map((d, index) => (
+            <div key={index} className="px-2">
+              <div className="bg-[#3c5e4b] p-6 rounded-3xl text-white h-[450px] flex flex-col">
+                <div className="h-24 flex items-center justify-center">
+                  <div className="text-4xl font-bold text-center">{d.title}</div>
+                </div>
+
+                <div className="h-48 flex items-center justify-center overflow-hidden m-4">
+                  {Array.isArray(d.description) ? (
+                    <ul className="list-disc pl-6 space-y-2 overflow-y-auto text-xl">
+                      {d.description.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-center text-xl">{d.description}</p>
+                  )}
+                </div>
+
+                <div className="h-24 flex items-center justify-center">
+                  <div className="text-3xl font-semibold text-center">
+                    {d.amount}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+      <div className='mx-96 flex justify-center items-center text-5xl border-b-[3px] border-b-[#ebc136] pb-4'>
+        Registration Fee
+      </div>
+
+      {/* Registration Fee Section */}
+      <div className="w-3/4 m-auto my-10">
+        <Slider {...settings}>
+          {RegistrationData.map((d, index) => (
+            <div key={index} className="px-2">
+              <div className="bg-[#3c5e4b] p-6 rounded-3xl text-white h-[450px] flex flex-col">
+                <div className="h-24 flex items-center justify-center">
+                  <div className="text-4xl font-bold text-center">{d.title}</div>
+                </div>
+
+                <div className="h-48 flex items-center justify-center overflow-hidden">
+                  <p className="text-center text-xl">{d.description}</p>
+                </div>
+
+                <div className="h-24 flex items-center justify-center">
+                  <div className="text-3xl font-semibold text-center">
+                    {d.amount}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+
+
       <Footer />
-    </div>
+    </div >
   )
 }
 
