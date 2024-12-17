@@ -25,3 +25,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.slick-slide > div{
+  margin: 0 10px;
+}
+
+.custom-arrow {
+  color: #3c5e4b;
+}
+
+.custom-arrow:hover {
+  color: #2a4032;
+}
