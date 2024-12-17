@@ -177,7 +177,7 @@ const Track = () => {
   return (
     <div>
       <Navbar />
-      <main className="py-16 px-4">
+      <main className="py-16 px-4 font-serif">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-3 md:mx-20">
             {TRACK_CARDS.map((card, index) => (

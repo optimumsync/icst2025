@@ -101,7 +101,7 @@ const Slides = ({ data }) => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     // arrows:true,
     nextArrow: <CustomArrow direction="right" />,
@@ -119,7 +119,7 @@ const Slides = ({ data }) => {
   };
   return (
     <div className="container mx-auto py-4">
-      <Slider {...settings} className="h-full">
+      <Slider {...settings} className="h-full lg:px-32">
         {data.map((card, index) => (
           <div
             key={index}

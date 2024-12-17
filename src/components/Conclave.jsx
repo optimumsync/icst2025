@@ -211,8 +211,8 @@ function Conclave() {
 
         <div className='bg-[#688d78] text-white p-1 md:p-6 m-4 mb-14 md:m-8 rounded-3xl text-xl md:text-3xl'>
           <p className='m-6 md:m-10'>Continuing the legacy, The International conclave on Sustainable technologies has been organized in Feb 2025. The ICST 2025 Conclave aims to address challenges within the sustainable technology landscape, including land allocation, feedstock supply chains, affordable financing, and innovative market creation. By bringing together global thought leaders, researchers, and industry experts, this event will facilitate meaningful discussions and propose solutions to accelerate the adoption of sustainable practices across various sectors, ultimately supporting the development of a resilient and eco-friendly future.</p>
-
           <p className='m-6 md:m-10'>We warmly invite all stakeholders committed to sustainable progress to participate in the International Conclave on Sustainable Technology (ICST 2025) σπ February 19th & 20th, 2025, in Mysuru, India. This global platform is dedicated to fostering discussions and collaborations among industry experts, policymakers, business leaders, academics, researchers, and educational pioneers in the field of sustainability</p>
+
 
           <p className='m-6 md:m-10'>Mysuru is an ideal host for ICST 2025, celebrated for its historical architecture, vibrant cultural heritage, and commitment to environmental cleanliness. Recognized as one of India's cleanest cities, Mysuru combines traditional charm with modern connectivity, making it accessible by air, rail, and road, Located amid lush agricultural and horticultural landscapes, Mysuru is also a rising industrial center, balancing historical legacy with contemporary innovation</p>
 
