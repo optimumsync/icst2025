@@ -200,24 +200,54 @@ function Conclave() {
   return (
     <div>
       <Navbar />
+      <div className="bg-gogreen shadow-md shadow-slate-700 p-3">
+        <h1 className="text-center text-3xl md:text-4xl font-bold my-5 text-white">2nd International conclave on Sustainable Technologies for MSME sector</h1>
+        <div className="font-semibold my-5 flex justify-center w-full">
+          <div className="md:w-7/12 text-center z-10 text-white text-lg md:text-xl">
+            19th and 20th February 2025
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row text-center items-stretch justify-center gap-10 my-10 mx-auto w-3/4 text-lg font-semibold">
+          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-3 border rounded-s-3xl shadow-md ">
+            <div>Organized by :</div>
+            <div><img src={nie_logo} alt="nie_logo" className="w-auto h-16" /></div>
+            <div>The National Institute of Engineering</div>
+          </div>
+
+          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-3 border shadow-md">
+            <div>In Collaboration with :</div>
+            <div><img src={fd_logo} alt="fd_logo" className="w-auto h-16" /></div>
+            <div>FH Dortmund University Germany</div>
+          </div>
+
+          <div className="text-center flex flex-col items-center justify-center gap-3 bg-white mx-auto w-full md:w-1/3 p-3 border rounded-e-3xl shadow-md">
+            <div>Technically Co Sponsored by :</div>
+            <div><img src={ioe_logo} alt="ioe_logo" className="w-auto h-16" /></div>
+            <div>The Institution of Engineers(India), Mysuru Local Center.</div>
+          </div>
+        </div>
+
+        <div className='text-center text-white text-lg md:text-lg font-semibold my-3'>
+          <div>Venue : Diamond Jubilee Sports Complex, NIE, Mysore, India</div>
+        </div>
+      </div>
       <div className='p-3 md:p-6 md:px-[80px] md:pb-1 text-xl'>
-        <p className='m-6 md:m-10 text-xl md:text-3xl'>In our rapidly evolving world, sustainable technology is becoming essential for addressing pressing environmental challenges. Non-renewable energy sources, while still prominent, are finite and contribute significantly to greenhouse gas emissions and climate change. Sustainable technology offers renewable and environmentally responsible alternatives that can reduce these impacts and support a healthier planet.</p>
+        <p className='m-6 md:m-10 text-xl md:text-xl'>In our rapidly evolving world, sustainable technology is becoming essential for addressing pressing environmental challenges. Non-renewable energy sources, while still prominent, are finite and contribute significantly to greenhouse gas emissions and climate change. Sustainable technology offers renewable and environmentally responsible alternatives that can reduce these impacts and support a healthier planet.</p>
 
-        <p className='m-6 md:m-10 text-xl md:text-3xl'>The Clean Fuels International Conclave 2022, was organized by NIE on November 2-3 at Silent Shores Convention Centre in Mysuru, India. It was dedicated to exploring the theme of the evolving biofuel ecosystem in India and the growing investment opportunities within it. The event was further enriched by the valuable international collaborations established through partnerships with Tech4Fuels, OWI, and the FH Dortmund University of Applied Sciences and Arts.</p>
+        <p className='m-6 md:m-10 text-xl md:text-xl'>The Clean Fuels International Conclave 2022, was organized by NIE on November 2-3 at Silent Shores Convention Centre in Mysuru, India. It was dedicated to exploring the theme of the evolving biofuel ecosystem in India and the growing investment opportunities within it. The event was further enriched by the valuable international collaborations established through partnerships with Tech4Fuels, OWI, and the FH Dortmund University of Applied Sciences and Arts.</p>
 
-        <div className='text-3xl md:text-5xl flex justify-center items-center border-y-[3px] border-black p-2 md:p-4 mx-5 md:mx-10 m-10 md:m-14 text-[#ebc136]'>
+        <div className='text-3xl md:text-5xl flex justify-center items-center border-y-[3px] border-black p-2 md:p-4 mx-5 md:mx-10 m-10 md:m-14 text-[#d39609]'>
           ICST 2025 Conclave
         </div>
 
-        <div className='bg-[#688d78] text-white p-1 md:p-6 m-4 mb-14 md:m-8 rounded-3xl text-xl md:text-3xl'>
+        <div className='bg-[#14532d] text-white p-1 md:p-6 m-4 mb-14 md:m-8 rounded-3xl text-xl md:text-xl'>
           <p className='m-6 md:m-10'>Continuing the legacy, The International conclave on Sustainable technologies has been organized in Feb 2025. The ICST 2025 Conclave aims to address challenges within the sustainable technology landscape, including land allocation, feedstock supply chains, affordable financing, and innovative market creation. By bringing together global thought leaders, researchers, and industry experts, this event will facilitate meaningful discussions and propose solutions to accelerate the adoption of sustainable practices across various sectors, ultimately supporting the development of a resilient and eco-friendly future.</p>
           <p className='m-6 md:m-10'>We warmly invite all stakeholders committed to sustainable progress to participate in the International Conclave on Sustainable Technology (ICST 2025) σπ February 19th & 20th, 2025, in Mysuru, India. This global platform is dedicated to fostering discussions and collaborations among industry experts, policymakers, business leaders, academics, researchers, and educational pioneers in the field of sustainability</p>
 
 
           <p className='m-6 md:m-10'>Mysuru is an ideal host for ICST 2025, celebrated for its historical architecture, vibrant cultural heritage, and commitment to environmental cleanliness. Recognized as one of India's cleanest cities, Mysuru combines traditional charm with modern connectivity, making it accessible by air, rail, and road, Located amid lush agricultural and horticultural landscapes, Mysuru is also a rising industrial center, balancing historical legacy with contemporary innovation</p>
 
-          <p className='m-6 md:m-10'>Join us in Mysuru to be part of meaningful dialogues, experience collaborative sessions, and witness groundbreaking innovations that shape the future of sustainable technology.
-            For more details, visit: https://icstnie2025.com/home</p>
+          <p className='m-6 md:m-10'>Join us in Mysuru to be part of meaningful dialogues, experience collaborative sessions, and witness groundbreaking innovations that shape the future of sustainable technology.</p>
         </div>
       </div>
 
@@ -232,15 +262,15 @@ function Conclave() {
 
                 {d.image ? (
                   <div className="flex flex-col md:flex-row items-center justify-between m-4">
-                    <div className="flex-1 text-base md:text-xl lg:text-2xl text-gray-800">
+                    <div className="flex-1 text-base md:text-lg lg:text-2xl text-gray-800">
                       {Array.isArray(d.description) ? (
-                        <ul className='list-disc pl-6 space-y-3 font-semibold'>
+                        <ul className='list-disc pl-6 space-y-3 font-small'>
                           {d.description.map((item, index) => (
                             <li key={index}>{item}</li>
                           ))}
                         </ul>
                       ) : (
-                        <p className='font-semibold'>{d.description}</p>
+                        <p className='font-small'>{d.description}</p>
                       )}
                     </div>
 
@@ -252,7 +282,7 @@ function Conclave() {
                   <div className='flex flex-row items-center justify-center'>
                     <div className="h-[300px] flex items-start justify-center overflow-y-auto m-4">
                       {Array.isArray(d.description) ? (
-                        <ul className='list-disc pl-6 space-y-3 text-base md:text-lg lg:text-2xl text-gray-800 font-semibold'>
+                        <ul className='list-disc pl-6 space-y-3 text-base md:text-lg lg:text-2xl text-gray-800 font-small'>
                           {d.description.map((item, index) => (
                             <li key={index}>{item}</li>
                           ))}
